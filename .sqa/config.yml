@@ -5,7 +5,7 @@ config:
       branch: release/1.7.10
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/edanya-uma/TsunamiHySEA:
-      branch: main
+      branch: v1.0.0
       repo: https://github.com/edanya-uma/TsunamiHySEA
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-seashell-termite.sh
-        container: qc.acc_gloppy-charcoal-lemur
+        - /usr/bin/env sh .sqa/script.freaky-grey-angelfish.sh
+        container: qc.acc_scaly-chestnut-wombat
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-fuchsia-weasel.sh
-        container: qc.doc_whiny-lemon-bracke
+        - /usr/bin/env sh .sqa/script.snippy-pear-eagle.sh
+        container: qc.doc_pasty-denim-toad
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-blue-anteater.sh
-        container: qc.doc_lanky-ochre-lemur
+        - /usr/bin/env sh .sqa/script.cheeky-russet-barnacle.sh
+        container: qc.doc_lousy-linen-toad
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-lavender-greyhound.sh
-        container: qc.doc_dorky-sapphire-newt
+        - /usr/bin/env sh .sqa/script.sloppy-copper-dachshund.sh
+        container: qc.doc_frumpy-aqua-chihuahua
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-thistle-ladybird.sh
-        container: qc.lic_snappy-wisteria-snake
+        - /usr/bin/env sh .sqa/script.shabby-silver-rat.sh
+        container: qc.lic_surly-ochre-ragdoll
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-ecru-flounder.sh
-        container: qc.ver_flimsy-aqua-cat
+        - /usr/bin/env sh .sqa/script.craggy-chestnut-pig.sh
+        container: qc.ver_sleazy-fuchsia-newfoundland
 timeout: 5400
