@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.10
+      branch: release/1.7.11
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/edanya-uma/TsunamiHySEA:
-      branch: v1.0.0
+      branch: main
       repo: https://github.com/edanya-uma/TsunamiHySEA
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-grey-angelfish.sh
-        container: qc.acc_scaly-chestnut-wombat
+        - /usr/bin/env sh .sqa/script.breezy-vermilion-moorhen.sh
+        container: qc.acc_gloppy-teal-buzzard
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-pear-eagle.sh
-        container: qc.doc_pasty-denim-toad
+        - /usr/bin/env sh .sqa/script.frumpy-gold-chameleon.sh
+        container: qc.doc_geeky-cornflower-greyhound
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-russet-barnacle.sh
-        container: qc.doc_lousy-linen-toad
+        - /usr/bin/env sh .sqa/script.snippy-azure-magpie.sh
+        container: qc.doc_craggy-malachite-newt
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-copper-dachshund.sh
-        container: qc.doc_frumpy-aqua-chihuahua
+        - /usr/bin/env sh .sqa/script.wheezy-celadon-terrier.sh
+        container: qc.doc_hazy-teal-kiwi
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-silver-rat.sh
-        container: qc.lic_surly-ochre-ragdoll
+        - /usr/bin/env sh .sqa/script.craggy-firebrick-heron.sh
+        container: qc.lic_homely-pear-spider
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-chestnut-pig.sh
-        container: qc.ver_sleazy-fuchsia-newfoundland
+        - /usr/bin/env sh .sqa/script.foggy-turquoise-baboon.sh
+        container: qc.ver_sleazy-copper-seahorse
 timeout: 5400
