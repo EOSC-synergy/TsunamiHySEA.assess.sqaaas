@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-vermilion-moorhen.sh
-        container: qc.acc_gloppy-teal-buzzard
+        - /usr/bin/env sh .sqa/script.lovely-buff-dog.sh
+        container: qc.acc_homely-green-bordeaux
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-gold-chameleon.sh
-        container: qc.doc_geeky-cornflower-greyhound
+        - /usr/bin/env sh .sqa/script.sickly-peach-insect.sh
+        container: qc.doc_zippy-periwinkle-sponge
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-azure-magpie.sh
-        container: qc.doc_craggy-malachite-newt
+        - /usr/bin/env sh .sqa/script.silly-bronze-budgerigar.sh
+        container: qc.doc_frumpy-cinnamon-gopher
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-celadon-terrier.sh
-        container: qc.doc_hazy-teal-kiwi
+        - /usr/bin/env sh .sqa/script.droopy-sapphire-chihuahua.sh
+        container: qc.doc_foggy-pink-cheetah
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-firebrick-heron.sh
-        container: qc.lic_homely-pear-spider
+        - /usr/bin/env sh .sqa/script.gimpy-mustard-bongo.sh
+        container: qc.lic_pretty-ivory-quetzal
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-turquoise-baboon.sh
-        container: qc.ver_sleazy-copper-seahorse
+        - /usr/bin/env sh .sqa/script.grumpy-linen-bear.sh
+        container: qc.ver_sleepy-bistre-baboon
 timeout: 5400
