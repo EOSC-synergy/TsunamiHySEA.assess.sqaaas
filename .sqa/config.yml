@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-cerulean-buffalo.sh
-        container: qc.acc_wimpy-corn-deer
+        - /usr/bin/env sh .sqa/script.hasty-plum-markhor.sh
+        container: qc.acc_sloppy-aqua-earwig
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-malachite-kingfisher.sh
-        container: qc.doc_slaphappy-flax-jaguar
+        - /usr/bin/env sh .sqa/script.snippy-brown-foxhound.sh
+        container: qc.doc_flimsy-scarlet-quokka
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-taupe-lobster.sh
-        container: qc.doc_skinny-aqua-tamarin
+        - /usr/bin/env sh .sqa/script.slimy-aquamarine-ferret.sh
+        container: qc.doc_squirrely-plum-badger
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-burgundy-malamute.sh
-        container: qc.doc_sloppy-viridian-camel
+        - /usr/bin/env sh .sqa/script.droopy-grey-monster.sh
+        container: qc.doc_jumpy-eggplant-fly
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-khaki-pig.sh
-        container: qc.lic_jumpy-gold-tzu
+        - /usr/bin/env sh .sqa/script.flimsy-wisteria-lizard.sh
+        container: qc.lic_greasy-cinnabar-stoat
   QC.Met:
     repos:
       github.com/edanya-uma/TsunamiHySEA cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-olive-gorilla.sh
-        container: qc.met_snappy-chartreuse-sheepdog
+        - /usr/bin/env sh .sqa/script.queasy-magenta-neanderthal.sh
+        container: qc.met_tacky-charcoal-seahorse
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-purple-zebu.sh
-        container: qc.ver_wiggy-beige-pinscher
+        - /usr/bin/env sh .sqa/script.skimpy-flax-mongrel.sh
+        container: qc.ver_hilly-green-moose
 timeout: 5400
