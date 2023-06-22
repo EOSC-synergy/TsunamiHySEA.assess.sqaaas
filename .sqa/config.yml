@@ -15,32 +15,38 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-corn-hippopotamus.sh
-        container: qc.acc_thirsty-teal-oyster
+        - /usr/bin/env sh .sqa/script.sleepy-cerulean-buffalo.sh
+        container: qc.acc_wimpy-corn-deer
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-amber-impala.sh
-        container: qc.doc_snoopy-champagne-centipede
+        - /usr/bin/env sh .sqa/script.nippy-malachite-kingfisher.sh
+        container: qc.doc_slaphappy-flax-jaguar
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-charcoal-bulldog.sh
-        container: qc.doc_snazzy-silver-havanese
+        - /usr/bin/env sh .sqa/script.trippy-taupe-lobster.sh
+        container: qc.doc_skinny-aqua-tamarin
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-beige-squid.sh
-        container: qc.doc_hilly-emerald-snail
+        - /usr/bin/env sh .sqa/script.ready-burgundy-malamute.sh
+        container: qc.doc_sloppy-viridian-camel
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-pear-tuatara.sh
-        container: qc.lic_droopy-alizarin-warthog
+        - /usr/bin/env sh .sqa/script.paltry-khaki-pig.sh
+        container: qc.lic_jumpy-gold-tzu
+  QC.Met:
+    repos:
+      github.com/edanya-uma/TsunamiHySEA cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-olive-gorilla.sh
+        container: qc.met_snappy-chartreuse-sheepdog
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-heliotrope-centipede.sh
-        container: qc.ver_craggy-rust-toad
+        - /usr/bin/env sh .sqa/script.zippy-purple-zebu.sh
+        container: qc.ver_wiggy-beige-pinscher
 timeout: 5400
