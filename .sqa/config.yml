@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-plum-markhor.sh
-        container: qc.acc_sloppy-aqua-earwig
+        - /usr/bin/env sh .sqa/script.shaky-ecru-tang.sh
+        container: qc.acc_shabby-tan-grouse
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-brown-foxhound.sh
-        container: qc.doc_flimsy-scarlet-quokka
+        - /usr/bin/env sh .sqa/script.beady-cream-camel.sh
+        container: qc.doc_shaky-sepia-spitz
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-aquamarine-ferret.sh
-        container: qc.doc_squirrely-plum-badger
+        - /usr/bin/env sh .sqa/script.homely-ochre-audemer.sh
+        container: qc.doc_muzzy-cinnabar-mole
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-grey-monster.sh
-        container: qc.doc_jumpy-eggplant-fly
+        - /usr/bin/env sh .sqa/script.cheeky-silver-quetzal.sh
+        container: qc.doc_surly-olive-capybara
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-wisteria-lizard.sh
-        container: qc.lic_greasy-cinnabar-stoat
+        - /usr/bin/env sh .sqa/script.smelly-flax-cuscus.sh
+        container: qc.lic_stinky-plum-gorilla
   QC.Met:
     repos:
       github.com/edanya-uma/TsunamiHySEA cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-magenta-neanderthal.sh
-        container: qc.met_tacky-charcoal-seahorse
+        - /usr/bin/env sh .sqa/script.stealthy-salmon-bullfrog.sh
+        container: qc.met_shabby-gamboge-setter
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-flax-mongrel.sh
-        container: qc.ver_hilly-green-moose
+        - /usr/bin/env sh .sqa/script.squirrely-lilac-rat.sh
+        container: qc.ver_zippy-brown-grouse
 timeout: 5400
