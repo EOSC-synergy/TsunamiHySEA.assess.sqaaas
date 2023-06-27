@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-ecru-tang.sh
-        container: qc.acc_shabby-tan-grouse
+        - /usr/bin/env sh .sqa/script.baggy-cardinal-quokka.sh
+        container: qc.acc_skinny-wisteria-deer
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-cream-camel.sh
-        container: qc.doc_shaky-sepia-spitz
+        - /usr/bin/env sh .sqa/script.cheeky-lime-mandrill.sh
+        container: qc.doc_fuzzy-viridian-malamute
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-ochre-audemer.sh
-        container: qc.doc_muzzy-cinnabar-mole
+        - /usr/bin/env sh .sqa/script.lanky-burgundy-balinese.sh
+        container: qc.doc_baggy-bistre-bonobo
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-silver-quetzal.sh
-        container: qc.doc_surly-olive-capybara
+        - /usr/bin/env sh .sqa/script.gloppy-rust-termite.sh
+        container: qc.doc_freaky-brown-birman
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-flax-cuscus.sh
-        container: qc.lic_stinky-plum-gorilla
+        - /usr/bin/env sh .sqa/script.gloppy-zucchini-rottweiler.sh
+        container: qc.lic_scaly-cream-mayfly
   QC.Met:
     repos:
       github.com/edanya-uma/TsunamiHySEA cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-salmon-bullfrog.sh
-        container: qc.met_shabby-gamboge-setter
+        - /usr/bin/env sh .sqa/script.snappy-rose-zorse.sh
+        container: qc.met_sunny-seashell-eagle
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-lilac-rat.sh
-        container: qc.ver_zippy-brown-grouse
+        - /usr/bin/env sh .sqa/script.scaly-amber-newt.sh
+        container: qc.ver_lousy-jade-impala
 timeout: 5400
