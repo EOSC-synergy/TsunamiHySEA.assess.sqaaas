@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.11
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/edanya-uma/TsunamiHySEA:
       branch: main
@@ -15,38 +15,44 @@ sqa_criteria:
     repos:
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-flax-burmese.sh
-        container: qc.acc_nippy-chartreuse-mongrel
+        - /usr/bin/env sh .sqa/script.tacky-indigo-axolotl.sh
+        container: qc.acc_sleazy-teal-manatee
   QC.Doc:
     repos:
       github.com/edanya-uma/TsunamiHySEA find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-chestnut-stingray.sh
-        container: qc.doc_foggy-salmon-squid
+        - /usr/bin/env sh .sqa/script.foggy-cerise-zebra.sh
+        container: qc.doc_pretty-indigo-swan
       github.com/edanya-uma/TsunamiHySEA git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-cinnamon-raccoon.sh
-        container: qc.doc_scanty-persimmon-crocodile
+        - /usr/bin/env sh .sqa/script.slaphappy-harlequin-bear.sh
+        container: qc.doc_gloppy-sangria-chow
       github.com/edanya-uma/TsunamiHySEA markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-buff-cockroach.sh
-        container: qc.doc_hasty-magnolia-dragon
+        - /usr/bin/env sh .sqa/script.foggy-champagne-chow.sh
+        container: qc.doc_gimpy-olivine-dormouse
   QC.Lic:
     repos:
       github.com/edanya-uma/TsunamiHySEA licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-asparagus-akbash.sh
-        container: qc.lic_woozy-yellow-lemur
+        - /usr/bin/env sh .sqa/script.dorky-celadon-duck.sh
+        container: qc.lic_freaky-corn-dragonfly
   QC.Met:
     repos:
       github.com/edanya-uma/TsunamiHySEA cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-cornflower-wildebeest.sh
-        container: qc.met_breezy-persimmon-gecko
+        - /usr/bin/env sh .sqa/script.cheeky-chartreuse-macaque.sh
+        container: qc.met_baggy-seashell-hamster
+  QC.Sty:
+    repos:
+      github.com/edanya-uma/TsunamiHySEA oclint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-celadon-lemming.sh
+        container: qc.sty_homey-aqua-reindeer
   QC.Ver:
     repos:
       github.com/edanya-uma/TsunamiHySEA get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-harlequin-bonobo.sh
-        container: qc.ver_lanky-lime-slug
+        - /usr/bin/env sh .sqa/script.leaky-linen-caiman.sh
+        container: qc.ver_nerdy-magnolia-spoonbill
 timeout: 5400
